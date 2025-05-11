@@ -1,7 +1,14 @@
+import { About, Contact, Hero, ProjectGallery, SkillSection, TechStack } from "@/Components";
+
 export default function Home() {
   return (
-    <div className="">
-      Cyberohn's portfolio
-    </div>
+    <main className="">
+      <Hero />
+      <About />
+      <SkillSection />
+      <TechStack />
+      <ProjectGallery />
+      <Contact />
+    </main>
   );
 }

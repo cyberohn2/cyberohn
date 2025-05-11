@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Hero = () => {
+const About = () => {
   return (
     <section>
-      Hero Sections
+      
     </section>
   )
 }
 
-export default Hero
+export default About

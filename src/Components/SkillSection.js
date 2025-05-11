@@ -2,9 +2,9 @@ import React from 'react'
 
 const SkillSection = () => {
   return (
-    <div>
+    <section>
       This sections shows all my skills
-    </div>
+    </section>
   )
 }
 

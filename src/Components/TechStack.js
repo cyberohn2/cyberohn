@@ -2,9 +2,9 @@ import React from 'react'
 
 const TechStack = () => {
   return (
-    <div>
+    <section>
       This section shows my TechStack
-    </div>
+    </section>
   )
 }
 

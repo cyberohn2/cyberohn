@@ -2,9 +2,9 @@ import React from 'react'
 
 const ProjectGallery = () => {
   return (
-    <div>
+    <section>
       This section shows my project gallery
-    </div>
+    </section>
   )
 }
 
