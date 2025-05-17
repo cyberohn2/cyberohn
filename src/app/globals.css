@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --pryClr: #00ffff;
+  --secClr: #ff00ff;
+  --accentClr: #8a2be2;
 }
 
 @theme inline {
@@ -12,9 +15,64 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@font-face {
+  font-family: 'Termina';
+  src: url("../assets/fonts/TerminaTest-Black.otf") format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Termina';
+  src: url("../assets/fonts/TerminaTest-Heavy.otf") format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Termina';
+  src: url("../assets/fonts/TerminaTest-Bold.otf") format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Termina';
+  src: url("../assets/fonts/TerminaTest-Demi.otf") format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Termina';
+  src: url("../assets/fonts/TerminaTest-Medium.otf") format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Termina';
+  src: url("../assets/fonts/TerminaTest-Regular.otf") format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Termina';
+  src: url("../assets/fonts/TerminaTest-Light.otf") format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Termina';
+  src: url("../assets/fonts/TerminaTest-ExtraLight.otf") format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Termina';
+  src: url("../assets/fonts/TerminaTest-Thin.otf") format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1d011d;
     --foreground: #ededed;
   }
 }
@@ -22,5 +80,41 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --font: 'Termina';
+}
+.termina{
+  font-family: 'Termina';
+}
+
+
+.slow-bounce {
+  animation: slow-bounce 10s ease-in-out infinite;
+}
+@keyframes slow-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.long-animate{
+    transition-duration: 500ms;
+}
+.shadowbox{
+    filter: drop-shadow( 0px 10px 20px rgba(48, 47, 47, 0.5));
+}
+
+.blob{ 
+  animation: blob 25s ease-in-out infinite;
+}
+
+@keyframes blob {
+    0%, 100% {
+    transform: scale(1) ;
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }

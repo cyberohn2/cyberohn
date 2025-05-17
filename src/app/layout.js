@@ -1,16 +1,56 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Footer, Header } from "@/Components";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const termina = localFont({
+  src: [
+    {
+      path: '../assets/fonts/TerminaTest-Black.otf',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/TerminaTest-Heavy.otf',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/TerminaTest-Bold.otf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/TerminaTest-Demi.otf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/TerminaTest-Medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/TerminaTest-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/TerminaTest-Light.otf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/TerminaTest-ExtraLight.otf',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/TerminaTest-Thin.otf',
+      weight: '100',
+      style: 'normal',
+    },
+  ]
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -19,8 +59,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" >
+      <body className="bg-[#fff] text-[#e4e4e4] md:p-4 p-2 overflow-x-hidden">
         <Header />
         {children}
         <Footer />
