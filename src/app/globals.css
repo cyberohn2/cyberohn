@@ -118,3 +118,104 @@ body {
     transform: scale(1.05);
   }
 }
+
+.cliptext{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@keyframes icon-up {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-icon-up {
+  animation: icon-up 1s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Custom slow spin for loading animation */
+.animate-spin-slow {
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes border-grow {
+  0% {
+    clip-path: polygon(50% 0%, 50% 0%, 50% 0%, 50% 0%);
+  }
+  12.5% {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 0%, 50% 0%);
+  }
+  25% {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 0%);
+  }
+  37.5% {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 0%);
+  }
+  50% {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 50% 0%);
+  }
+  62.5% {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%, 50% 0%);
+  }
+  75% {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
+  }
+  87.5% {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
+  }
+  100% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  }
+}
+
+.animate-border-grow {
+  animation: border-grow 15s linear forwards;
+}
+
+@keyframes circle-progress {
+  from {
+    stroke-dashoffset: 169.65; /* 2 * PI * 27 */
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.stroke-progress {
+  animation: drawBorder 15s linear forwards;
+}
+
+@keyframes drawBorder {
+  from {
+    stroke-dashoffset: 392;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.gradient-border {
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(to bottom right, #00FFFF, #047dce, #FF00FF);
+  border-image-slice: 1;
+}
+
+@keyframes skill-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-skill-fade {
+  animation: skill-fade 0.6s cubic-bezier(0.4,0,0.2,1);
+}
