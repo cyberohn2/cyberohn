@@ -18,7 +18,6 @@ import wordpressIcon from '../assets/wordpress-svgrepo-com.svg';
 import illustratorIcon from '../assets/adobe-illustrator-svgrepo-com.svg';
 import photoShopIcon from '../assets/photoshop-cc-logo-svgrepo-com.svg';
 import canvaIcon from '../assets/canva-svgrepo-com.svg';
-import glowingBlob from '../assets/glowblob.png';
 
 import SplitType from 'split-type';
 import gsap from "gsap";
@@ -104,14 +103,7 @@ const Hero = () => {
   }, [skills])
 
   return (
-    <section className='hero relative border border-transparent '>
-      <div className='before:content-[""] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#00FFFF] before:to-[#FF00FF] before:blur-xl before:opacity-80 before:rounded-full rounded-full slow-bounce absolute lg:-bottom-[80%] md:-bottom-[50%] -bottom-[25%] left-[50%] -translate-x-1/2 opacity-40'>
-        <Image
-          src={glowingBlob}
-          alt='icon'
-          className='z-10 blur-2xl opacity-80 rounded-full'
-        />
-      </div>
+    <section className='hero relative border border-transparent mb-24'>
       <div className="content">
         <div className='mt-2 md:mt-0'>
           <p className='text-center'>Hi there</p>
@@ -158,7 +150,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='md:absolut right-0 -bottom-30 w-full mx-auto'>
+        <div className=' w-full mx-auto'>
           <div className='flex items-center gap-1.5 justify-center'>
             {skills.map( (skill, index) =>
             <div
