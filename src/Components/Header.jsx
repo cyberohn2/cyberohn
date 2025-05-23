@@ -13,7 +13,7 @@ const Header = () => {
   }
 
   return (
-    <header className='min-w-[95%] md:max-w-[1400px] flex justify-between items-center p-4 mx-auto rounded-4xl bg-gradient-to-b from-white/10 to-white/20 backdrop-blur-3xl border border-white/20 shadow-md font-bold sticky top-4 z-50'>
+    <header className='min-w-[95%] md:max-w-[1400px] flex justify-between items-center p-4 mx-auto rounded-4xl before:content-[""] before:absolute before:inset-0 before:rounded-4xl before:bg-gradient-to-b before:from-white/10 before:to-white/20 before:backdrop-blur-3xl isolate before:-z-30 border border-white/20 shadow-md font-bold sticky top-4 z-50'>
       <Image 
         src={logo} 
         alt="Cyberohn Logo" 
@@ -21,7 +21,7 @@ const Header = () => {
         width={100} 
       />
 
-      <nav className={`${mobileNav ? 'translate-x-0' : ' translate-x-[100%] md:translate-0'} flex md:justify-between items-center basis-[60%] fixed md:static bg-white/10 md:bg-transparent backdrop-blur-md md:backdrop-blur-none border border-white/20 shadow-md md:border-none md:shadow-none h-[100vh] md:h-auto -top-3 -right-3 flex-col md:flex-row p-2 md:p-0 rounded-xl pt-16 w-1/2 long-animate`}>
+      <nav className={`${mobileNav ? 'flex bg-gradient-to-b from-white/10 to-white/20 backdrop-blur-3xl' : ' hidden md:flex'}  md:justify-between items-center basis-[60%] absolute md:static border border-white/20 shadow-md md:border-none md:shadow-none h-[100vh] md:h-auto -top-3 -right-3 flex-col md:flex-row p-2 md:p-0 rounded-xl pt-16 w-1/2 long-animate`}>
         <ul className='flex items-start md:items-center md:gap-4  flex-col md:flex-row mb-4 md:mb-0 text-white/70 '>
           <li>About</li>
           <li>Contact</li>
