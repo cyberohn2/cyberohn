@@ -3,7 +3,8 @@ import React from 'react'
 const ProjectGallery = () => {
   return (
     <section>
-      This section shows my project gallery
+      <h2>My Works</h2>
+      <div></div>
     </section>
   )
 }

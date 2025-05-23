@@ -236,3 +236,17 @@ body {
     background: rgba(255,255,255,0.85);
   }
 }
+
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.animate-border{
+  animation: borderMove 5s linear infinite;
+}

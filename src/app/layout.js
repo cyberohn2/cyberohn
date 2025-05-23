@@ -60,7 +60,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className="text-[#e4e4e4] md:p-4 p-2 overflow-x-hidden relative">
+      <body className="">
         <Header />
         {children}
         <Footer />
