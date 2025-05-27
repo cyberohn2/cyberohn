@@ -7,12 +7,11 @@ import arrowIcon from '../assets/arrow-up-right.svg';
 const About = () => {
   return (
     <section className='relative h-full flex flex-col md:flex-row items-start justify-between gap-6 lg:gap-10 max-w-[1400px] mx-auto px-2 md:px-4 py-10 lg:py-20 isolate mb-24'>
-      <div className='w-full relative isolate overflow-hidden bg-gradient-to-br from-[#00FFFF] via-[#047dce] to-[#FF00FF] bottom-0 -z-10 rounded-tl-[6rem] rounded-br-[6rem] rounded-tr-2xl rounded-bl-2xl  shadow-2xl shadow-[black]'>
+      <div className='basis-1/2 h-[400px] flex items-end relative isolate overflow-hidden bg-gradient-to-br from-[#00FFFF] via-[#047dce] to-[#FF00FF] bottom-0 -z-10 rounded-tl-[6rem] rounded-br-[6rem] rounded-tr-2xl rounded-bl-2xl  shadow-2xl shadow-[black]'>
           <Image
             src={heroImg}
             alt="Cyberohn image"
-            width={100}
-            className="hero-image mx-auto w-full"
+            className="hero-image mx-auto "
           />
       </div>
       <div className='w-full'>

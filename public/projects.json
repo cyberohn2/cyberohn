@@ -1,0 +1,180 @@
+{
+    "data": [
+        {
+            "title": "Innjoy Telcom Website",
+            "description": "A modern platform built for a telecommunications company to showcase their services and enable user registration. The frontend is developed with React and Tailwind CSS, while the backend leverages Express and MongoDB for robust data management and API functionality.",
+            "image": "/innjoy-telcom.png",
+            "repo": "https://github.com/cyberohn2/",
+            "site": "https://innjoytelcom.com.ng/"
+        },
+        {
+            "title": "Pizz Treat Ecommerce Website",
+            "description": "A modern platform built for a Peanut brand to show their brand product they sell. The frontend is developed with React and Tailwind CSS.",
+            "image": "/pizz-treats.png",
+            "repo": "https://github.com/cyberohn2/Cyberohn-ecommerce-template-frontend",
+            "site": "https://cyberohn-ecommerce-template-frontend.vercel.app"
+        },
+        {
+            "title": "Cleaning Service Website",
+            "description": "A responsive website for a cleaning service company, built with React and Tailwind CSS. The site highlights available services, showcases the brand, and provides an easy way for customers to learn more and get in touch.",
+            "image": "/cleaning-website.png",
+            "repo": "https://github.com/cyberohn2/Cleaning-Website",
+            "site": "https://cyberohn2.github.io/Cleaning-Website"
+        },
+        {
+            "title": "TechCare Clinic Website",
+            "description": "A responsive website for a cleaning service company, built with React and Tailwind CSS. The site highlights available services, showcases the brand, and provides an easy way for customers to learn more and get in touch.",
+            "image": "/tech-care.png",
+            "repo": "https://github.com/cyberohn2/TechCare",
+            "site": "https://tech-care-psi-ten.vercel.app/"
+        },
+        {
+            "title": "A meme app",
+            "description": "A modern web application that allows users to generate and share memes. Built with React, this app features a user-friendly interface for creating memes from images and text, and includes functionality for saving and sharing memes across social media platforms.",
+            "image": "/meme-app.png",
+            "repo": "https://github.com/cyberohn2/The-Meme-App",
+            "site": "https://cyberohn2.github.io/The-Meme-App/"
+        },
+        {
+            "title": "Loopstudios landing page",
+            "description": "This beautiful responsive landing page was layed out using CSS grid layout.",
+            "image": "/loopstudio.webp",
+            "repo": "https://github.com/cyberohn2/FrontendMentor-Loop-Studios",
+            "site": "https://cyberohn2.github.io/FrontendMentor-Loop-Studios/"
+        },
+        {
+            "title": "Sunnyside agency landing page",
+            "description": "A beautiful responsive landing page built with vanilla CSS and JS.",
+            "image": "/sunny side agency.webp",
+            "repo": "https://github.com/cyberohn2/frontendMentor-Sunny-side-agency",
+            "site": "https://cyberohn2.github.io/frontendMentor-Sunny-side-agency/public/index.html"
+        },
+        
+        {
+            "title": "Bookmark landing page",
+            "description": "A nice responsive layout-based project with tabbed features section and the FAQ accordion.",
+            "image": "/bookmark lp.webp",
+            "repo": "https://github.com/cyberohn2/bookmark-landing-page",
+            "site": "https://cyberohn2.github.io/bookmark-landing-page/"
+        },
+        {
+            "title": "Clipboard landing page",
+            "description": "A nice layout-based project with multi-column and responsive layouts.",
+            "image": "/clipboard lp.webp",
+            "repo": "https://github.com/cyberohn2/Frontend-Mentor-ClipBoard-Landing-page",
+            "site": "https://cyberohn2.github.io/Frontend-Mentor-ClipBoard-Landing-page/"
+        },
+        {
+            "title": "Custom WhatsApp Link",
+            "description": "Custom whatsapp link maker for sharing.",
+            "image": "/whatsapp custom message.png",
+            "repo": "https://github.com/cyberohn2/Custom-whatsapp-message",
+            "site": "https://cyberohn2.github.io/Custom-whatsapp-message/src/index.html"
+        },
+        {
+            "title": "FUTA Homepage: Redesign",
+            "description": "A redesign of The Federal University of Technology, Akure website using plain HTML, CSS, and javascript.",
+            "image": "/futa.png",
+            "repo": "https://github.com/cyberohn2/FUTA-Rebuild",
+            "site": "https://cyberohn2.github.io/FUTA-Rebuild/"
+        },
+        {
+            "title": "Interactive card details form",
+            "description": "In this project i was able to put my javaScript skill to test by implementing some DOM manipulations and form validation in this Interactive card details form.",
+            "image": "/interactive card.webp",
+            "repo": "https://github.com/cyberohn2/Interactive-card-details-Frontend-Mentor-Challenge",
+            "site": "https://cyberohn2.github.io/Interactive-card-details-Frontend-Mentor-Challenge/"
+        },
+        {
+            "title": "Intro section with dropdown navigation",
+            "description": "Here i created a responsive landing page whilst incorporating a dropdown navigation menu.",
+            "image": "/intro section.webp",
+            "repo": "https://github.com/cyberohn2/Intro-Section-With-drop-down-navigation",
+            "site": "https://cyberohn2.github.io/Intro-Section-With-drop-down-navigation/"
+        },
+        {
+            "title": "News homepage",
+            "description": "With the use of CSS Grid i was able to create this news Homepage with multiple sections.",
+            "image": "/news homepage.webp",
+            "repo": "https://github.com/cyberohn2/FrontendMentor-News-Homepage",
+            "site": "https://cyberohn2.github.io/FrontendMentor-News-Homepage/"
+        },
+        {
+            "title": "Notifications page",
+            "description": "This projects is a simple notification page built with vanilla HTML, CSS and JS, with the functionality to toggle the visual state of the notifications.",
+            "image": "/notification page.webp",
+            "repo": "https://github.com/cyberohn2/FrontendMentor-Notification-Page",
+            "site": "https://cyberohn2.github.io/FrontendMentor-Notification-Page/"
+        },
+        {
+            "title": "NFT preview card component",
+            "description": "A simple preview card component built with vanilla HTML and CSS.",
+            "image": "/nft-card.webp",
+            "repo": "https://github.com/cyberohn2/NFT-Card-Preview",
+            "site": "https://cyberohn2.github.io/NFT-Card-Preview/"
+        },
+        {
+            "title": "E-commerce product page",
+            "description": "Here i built a beautiful responsive product page with a lightbox product gallery and cart functionality.",
+            "image": "/ecommerce page.webp",
+            "repo": "https://github.com/cyberohn2/E-commerce-product-page",
+            "site": "https://cyberohn2.github.io/E-commerce-product-page/"
+        },
+        {
+            "title": "Time tracking dashboard",
+            "description": "Aside creating this wonderful dashboard with CSS grid i also work with a JSON data file to practice working with data.",
+            "image": "/time-tracking dashboard.webp",
+            "repo": "https://github.com/cyberohn2/FrontendMentor-Time-Tracking-Dashboard",
+            "site": "https://cyberohn2.github.io/FrontendMentor-Time-Tracking-Dashboard/"
+        },
+        {
+            "title": "Order summary component",
+            "description": "A simple order summary landing page built with vanilla CSS.",
+            "image": "/order summary.webp",
+            "repo": "https://github.com/cyberohn2/order-summary-component",
+            "site": "https://cyberohn2.github.io/order-summary-component/"
+        },
+        {
+            "title": "Calculator app",
+            "description": "A simple calculator built with JS and styled with CSS grid.",
+            "image": "/calculator.webp",
+            "repo": "https://github.com/cyberohn2/calculator-App-",
+            "site": "https://cyberohn2.github.io/calculator-App-/"
+        },
+        {
+            "title": "Stats preview card component",
+            "description": "A great small design component.",
+            "image": "/stats preview card.webp",
+            "repo": "https://github.com/cyberohn2/Stats-Preview-Card-Component",
+            "site": "https://cyberohn2.github.io/Stats-Preview-Card-Component/"
+        },
+        {
+            "title": "3-column preview card component",
+            "description": "A responsive preview card component.",
+            "image": "/3column preview.webp",
+            "repo": "https://github.com/cyberohn2/3-column-preview-card-component",
+            "site": "https://cyberohn2.github.io/3-column-preview-card-component/"
+        },
+        {
+            "title": "Social proof section",
+            "description": "A responsive social proof section.",
+            "image": "/socialproof.webp",
+            "repo": "https://github.com/cyberohn2/FrontendMentor-Social-Proof",
+            "site": "https://cyberohn2.github.io/FrontendMentor-Social-Proof/"
+        },
+        {
+            "title": "URL shortening API landing page",
+            "description": "In this project i Integrated with the Clean URI link shortening API to shorten long urls and also made use of the browser storage.",
+            "image": "/url shortening api.webp",
+            "repo": "https://github.com/cyberohn2/url-shortening-api-master",
+            "site": "https://cyberohn2.github.io/url-shortening-api-master/"
+        },
+        {
+            "title": "Four card feature section",
+            "description": "A nice layout-based project with multi-column and responsive layouts.",
+            "image": "/fourcardsection.webp",
+            "repo": "https://github.com/cyberohn2/four-card-feature-section",
+            "site": "https://cyberohn2.github.io/four-card-feature-section/"
+        }
+    ]
+}

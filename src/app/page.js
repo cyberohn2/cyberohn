@@ -4,8 +4,8 @@ import glowingBlob from '../assets/glowblob.png';
 
 export default function Home() {
   return (
-    <main className="text-[#e4e4e4] md:p-4 p-2 overflow-x-hidden relative">
-      <div className='before:content-[""] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#00FFFF] before:to-[#FF00FF] before:blur-xl before:opacity-80 before:rounded-full rounded-full slow-bounce absolute lg:-top-[80%] md:-top-[50%] -top-[20%] left-[50%] -translate-x-1/2 before:shadow-2xl before:shadow-[#FF00FF]'>
+    <main className="text-[#e4e4e4] md:p-4 p-2 overflow-x-hidden ">
+      <div className='before:content-[""] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#00FFFF] before:to-[#00FFFF] before:blur-xl before:opacity-80 before:rounded-full rounded-full slow-bounce absolute lg:-top-[65%] md:-top-[50%] -top-[20%] left-[50%] -translate-x-1/2 before:shadow-2xl before:shadow-[#00FFFF]'>
         <Image
           src={glowingBlob}
           alt='icon'
@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <Hero />
       <About />
-      {/* <ProjectGallery /> */}
+      <ProjectGallery />
       <Contact />
     </main>
   );

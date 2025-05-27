@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <section className='min-w-[95%] md:max-w-[1400px] p-4 mx-auto mb-24'>
-      <div className='max-w-[500px] mx-auto p-[2px] rounded-xl bg-gradient-to-br from-white/20 to-black/20 backdrop-blur-3xl animate-border shadow-2xl '>
+      <div className='max-w-[500px] mx-auto p-[2px] rounded-xl bg-gradient-to-br from-white/50 to-white/5 backdrop-blur-3xl animate-border shadow-2xl '>
         <div className='bg-black/60 backdrop-blur-3xl rounded-xl p-6'>
           <h3 className=' bg-gradient-to-br from-[#00FFFF] to-[#240024] text-transparent bg-clip-text text-4xl md:text-5xl md:mb-1 mb-0 font-semibold'>Get In Touch</h3>
           <p className='text-[#9b859b] font-semibold mb-2 text-sm'>I'm excited to collaborate and create something amazing together!</p>
