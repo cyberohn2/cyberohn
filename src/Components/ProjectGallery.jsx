@@ -14,7 +14,6 @@ const ProjectGallery = () => {
   const [scrollValue, setScrollValue] = useState(0)
 
   const handleScroll = (direction) => {
-    console.log(scrollValue)
     // Set boundaries
     const minScroll = (-20 * projects.length) + 20; // Adjusted for 4 projects visible on desktop
     const maxScroll = 0;
@@ -25,28 +24,36 @@ const ProjectGallery = () => {
     }
   }
 
-  useEffect(() => {
+ useEffect(() => {
 
-    const fetchProjects = async () => {
-      const response = await fetch('/projects.json'); 
-      const data = await response.json();
-      setProjects(data.data);
-    };
 
-    fetchProjects();
-  })
+
+    const localProjects = localStorage.getItem('projects');
+    if (localProjects) {
+      setProjects(JSON.parse(localProjects));
+    } else {
+      const fetchProjects = async () => {
+        const response = await fetch('/projects.json');
+        const data = await response.json();
+        setProjects(data.data);
+        localStorage.setItem('projects', JSON.stringify(data.data));
+      };
+      fetchProjects();
+    }
+
+  }, []);
 
   return (
-    <section className="mb-24 relative overflow-hidden">
-      <div className='before:content-[""] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#00FFFF] before:to-[#00FFFF] before:blur-xl before:opacity-20 before:rounded-full rounded-full slow-bounce absolute lg:-bottom-[60%] md:-bottom-[50%] -bottom-[20%] left-[50%] -translate-x-1/2 before:shadow-2xl before:shadow-[#00FFFF] opacity-70'>
+    <section id="portfolio" className="scroll-mt-20 mb-24 relative overflow-hidden">
+      <div  className='before:content-[""] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#00FFFF] before:to-[#00FFFF] before:blur-xl before:opacity-20 before:rounded-full rounded-full slow-bounce absolute top-1/2 left-[50%] -translate-x-1/2 before:shadow-2xl before:shadow-[#00FFFF] '>
         <Image
           src={glowingBlob}
           alt='icon'
-          className='z-10 blur-2xl opacity-100 rounded-full animate-pulse'
+          className='z-10 blur-2xl rounded-full animate-pulse'
         />
       </div>
       <div className="mb-4">
-        <h1 className="xl:text-[4.5rem] lg:text-[3.5rem] text-[2rem] leading-none font-bold text-center ">
+        <h1 className="termina works-title xl:text-[4.5rem] lg:text-[3.5rem] text-[2rem] leading-none font-bold text-center ">
           My Works
         </h1>
         <p className="text-gray-400 text-center ">Some of my work that shows my expertise.</p>
@@ -62,7 +69,7 @@ const ProjectGallery = () => {
         </div>
         <div style={{width: `calc(320px * ${projects.length})`, transform: `translateX(${scrollValue}rem)`}} className={`flex items-stretch gap-4 transition duration-500`}>
           {projects.map((project, index) => (
-          <div key={index} className="w-80 h-[402px] rounded-xl bg-white/20 backdrop-blur-3xl shadow-lg p-4 text-white border border-white/10 cursor-pointer group hover:scale-105 active:scale-105 transition duration-500 flex flex-col justify-between">
+          <div key={index} className="project-card w-80 h-[402px] rounded-xl bg-white/20 backdrop-blur-3xl shadow-lg p-4 text-white border border-white/10 cursor-pointer group hover:scale-105 active:scale-105 transition duration-500 flex flex-col justify-between">
             {/* Image */}
             <div>
               <div className="w-full h-48 mb-4 rounded-lg overflow-hidden bg-black">
@@ -85,11 +92,11 @@ const ProjectGallery = () => {
             <div className="flex justify-between items-center text-sm mb-3 mt-auto">
               <div className="flex items-center space-x-1">
                 <Image width={20} className="inline" src={codeBranch} alt="code branch" />
-                <a href={project.repo} className="inline text-[hsl(178,100%,50%)]">Codebase</a>
+                <a target='_' href={project.repo} className="inline text-[hsl(178,100%,50%)]">Codebase</a>
               </div>
               <div className="flex items-center space-x-1">
                 <Image width={20} className="inline" src={browser} alt="browser icon" />
-                <a href={project.site} className="inline">Live Preview</a>
+                <a target='_' href={project.site} className="inline">Live Preview</a>
               </div>
             </div>
         </div>

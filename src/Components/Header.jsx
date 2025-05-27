@@ -23,11 +23,9 @@ const Header = () => {
 
       <nav className={`${mobileNav ? 'flex bg-gradient-to-b from-white/10 to-white/20 backdrop-blur-3xl' : ' hidden md:flex'}  md:justify-between items-center basis-[60%] absolute md:static border border-white/20 shadow-md md:border-none md:shadow-none h-[100vh] md:h-auto -top-3 -right-3 flex-col md:flex-row p-2 md:p-0 rounded-xl pt-16 w-1/2 long-animate`}>
         <ul className='flex items-start md:items-center md:gap-4  flex-col md:flex-row mb-4 md:mb-0 text-white/70 '>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Portfolio</li>
+          {["About", "Contact", "Portfolio"].map( (navItem, index) => <li onClick={handleMobileNav} className="cursor-pointer hover:font-bold transition-all w-[93px] text-center md:text-left" key={index}><a href={`#${navItem.toLowerCase().replace(/\s+/g, "-")}` }>{navItem}</a></li>)}
         </ul>
-        <button className="btn font-black bg-gradient-to-br from-[#00FFFF] via-[#047dce] to-[#FF00FF] text-transparent bg-clip-text cursor-pointer hover:shadow-2xl hover:shadow-[#ff00ff]">Hire Me</button>
+        <button className="btn font-black bg-gradient-to-br from-[#00FFFF] via-[#047dce] to-[#FF00FF] text-transparent bg-clip-text cursor-pointer hover:shadow-2xl hover:shadow-[#ff00ff]"><a target='_' href="https://docs.google.com/document/d/19RS54gvVGgjQm5fK_Kb9wp2G6hRZbb2m/edit?usp=drive_link&ouid=109452223560057187802&rtpof=true&sd=true">Hire Me</a></button>
       </nav>
 
       <Image 

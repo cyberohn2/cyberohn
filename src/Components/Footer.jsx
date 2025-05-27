@@ -11,12 +11,12 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className="bg-black">
+    <footer className="bg-[#2b2828] border-t border-white/30">
       <div className=" py-4 px-8 text-white min-w-[95%] md:max-w-[1400px] p-4 mx-auto">
            <div className="flex md:items-center flex-col md:flex-row justify-between">
            <a  href="/"><Image width={100} className="mx-auto md:mx-0 mb-4 md:m-0" src={logo} alt="cyberohn logo" /></a>
              <ul className="flex items-center gap-4 flex-col md:flex-row pb-8 mb-4 md:m-0 md:p-0 text-[#cac5d8]">
-                {["About", "Contact", "Portfolio"].map( (navItem, index) => <li className="cursor-pointer hover:font-bold transition-all w-[93px] text-center md:text-left" key={index}><a href={`/${navItem.toLowerCase().replace(/\s+/g, "-")}` }>{navItem}</a></li>)}
+                {["About", "Contact", "Portfolio"].map( (navItem, index) => <li className="cursor-pointer hover:font-bold transition-all w-[93px] text-center md:text-left" key={index}><a href={`#${navItem.toLowerCase().replace(/\s+/g, "-")}` }>{navItem}</a></li>)}
               </ul>
               <div className="flex items-center gap-8 justify-center pb-8 mb-4 md:m-0 md:p-0 border-b border-white md:border-none ">
                 <a target="_" href="https://www.github.com/cyberohn2"><Image width={20} src={gitbubIcon} alt="" /></a>

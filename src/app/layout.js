@@ -60,7 +60,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className="">
+      <body className=" scroll-smooth transition-all duration-500 ">
         <Header />
         {children}
         <Footer />

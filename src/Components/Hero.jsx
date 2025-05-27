@@ -103,7 +103,7 @@ const Hero = () => {
   }, [skills])
 
   return (
-    <section className='hero relative border border-transparent mb-24'>
+    <section className='scroll-mt-20 hero relative border border-transparent mb-24'>
       <div className="content">
         <div className='mt-2 md:mt-0'>
           <p className='text-center'>Hi there</p>

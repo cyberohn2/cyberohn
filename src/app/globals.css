@@ -81,6 +81,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   --font: 'Termina';
+  scroll-behavior: smooth;
 }
 .termina{
   font-family: 'Termina';
