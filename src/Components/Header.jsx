@@ -21,7 +21,7 @@ const Header = () => {
         width={100} 
       />
 
-      <nav className={`${mobileNav ? 'flex bg-gradient-to-b from-white/10 to-white/20 backdrop-blur-3xl' : ' hidden md:flex'}  md:justify-between items-center basis-[60%] absolute md:static border border-white/20 shadow-md md:border-none md:shadow-none h-[100vh] md:h-auto -top-3 -right-3 flex-col md:flex-row p-2 md:p-0 rounded-xl pt-16 w-1/2 long-animate`}>
+      <nav className={`${mobileNav ? 'flex bg-gradient-to-b md:bg-none from-white/10 to-white/20 backdrop-blur-3xl md:backdrop-blur-none' : ' hidden md:flex'}  md:justify-between items-center basis-[60%] absolute md:static border border-white/20 shadow-md md:border-none md:shadow-none h-[100vh] md:h-auto -top-3 -right-3 flex-col md:flex-row p-2 md:p-0 rounded-xl pt-16 w-1/2 long-animate`}>
         <ul className='flex items-start md:items-center md:gap-4  flex-col md:flex-row mb-4 md:mb-0 text-white/70 '>
           {["About", "Contact", "Portfolio"].map( (navItem, index) => <li onClick={handleMobileNav} className="cursor-pointer hover:font-bold transition-all w-[93px] text-center md:text-left" key={index}><a href={`#${navItem.toLowerCase().replace(/\s+/g, "-")}` }>{navItem}</a></li>)}
         </ul>

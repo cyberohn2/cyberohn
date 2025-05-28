@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import heroImg from '../assets/hero-img.png';
+import heroImg from '../assets/hero-img.webp';
 import arrowIcon from '../assets/arrow-up-right.svg';
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';

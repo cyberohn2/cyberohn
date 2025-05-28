@@ -44,7 +44,7 @@ const ProjectGallery = () => {
   }, []);
 
   return (
-    <section id="portfolio" className="scroll-mt-20 mb-24 relative overflow-hidden">
+    <section id="portfolio" className="scroll-mt-20 mb-24 relative ">
       <div  className='before:content-[""] before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#00FFFF] before:to-[#00FFFF] before:blur-xl before:opacity-20 before:rounded-full rounded-full slow-bounce absolute top-1/2 left-[50%] -translate-x-1/2 before:shadow-2xl before:shadow-[#00FFFF] '>
         <Image
           src={glowingBlob}
@@ -69,7 +69,7 @@ const ProjectGallery = () => {
         </div>
         <div style={{width: `calc(320px * ${projects.length})`, transform: `translateX(${scrollValue}rem)`}} className={`flex items-stretch gap-4 transition duration-500`}>
           {projects.map((project, index) => (
-          <div key={index} className="project-card w-80 h-[402px] rounded-xl bg-white/20 backdrop-blur-3xl shadow-lg p-4 text-white border border-white/10 cursor-pointer group hover:scale-105 active:scale-105 transition duration-500 flex flex-col justify-between">
+          <div key={index} className="project-card w-80 h-[402px] hover:h-fit rounded-xl bg-white/20 backdrop-blur-3xl shadow-lg p-4 text-white border border-white/10 cursor-pointer group hover:scale-105 active:scale-105 transition duration-500 flex flex-col justify-between">
             {/* Image */}
             <div>
               <div className="w-full h-48 mb-4 rounded-lg overflow-hidden bg-black">

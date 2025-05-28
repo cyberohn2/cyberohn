@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'; 
 import React, { useEffect, useLayoutEffect, useState } from 'react';
-import heroImg from '../assets/hero-img.png';
+import heroImg from '../assets/hero-img.webp';
 import frontEndIcon from '../assets/code-window.svg';
 import backendIcon from '../assets/square-terminal.svg';
 import webDesignIcon from '../assets/website-design.svg';
