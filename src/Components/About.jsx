@@ -51,7 +51,7 @@ const About = () => {
         <h2 ref={titleRef} className='termina bg-gradient-to-r from-[#00FFFF] to-[#490049] text-transparent bg-clip-text text-4xl md:text-6xl md:mb-6 mb-0 font-semibold opacity-0'>About Me</h2>
         <p className='text-[#9b859b] font-semibold mb-6'>I'm a passionate Full Stack Web Developer with over 2+ years of experience. I have honed my skills in HTML, CSS, JAVASCRIPT, Node.Js, MongoDB including popular tools, frameworks and libraries such as Express.js, Next.js, React Js, Tailwind CSS, Gsap, Sass, and GIT/GITHUB. Aside being able to create websites with codes i've also developed skill in Wix and Webflow to help me build websites faster.</p>
         <div className=''>
-          <a target='_' href='https://docs.google.com/document/d/19RS54gvVGgjQm5fK_Kb9wp2G6hRZbb2m/edit?usp=drive_link&ouid=109452223560057187802&rtpof=true&sd=true' className='flex items-center gap-4 w-fit py-3 px-7 rounded-4xl bg-gradient-to-br from-[#008cff] to-[#b101b1] cursor-pointer font-semibold group hover:scale-105 transition duration-300'>
+          <a target='_' href='https://docs.google.com/document/d/1C3t_--S5N6acKBnwDxhRyJ2k33Id-qgyWNEgsfTtswM/edit?usp=sharing' className='flex items-center gap-4 w-fit py-3 px-7 rounded-4xl bg-gradient-to-br from-[#008cff] to-[#b101b1] cursor-pointer font-semibold group hover:scale-105 transition duration-300'>
             <span>Hire me</span>
           <Image
             src={arrowIcon}
