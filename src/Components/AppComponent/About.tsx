@@ -26,7 +26,7 @@ const About = () => {
               </Link>
             </div>
           </div>
-          <div className='basis-1/4 lg:basis-1/2 w-fit h-[200px] flex items-end justify-center relative isolate bg-accent -z-10 rounded-tl-[6rem] rounded-br-[6rem] rounded-tr-2xl rounded-bl-2xl  shadow-2xl shadow-[black] mt-40 mx-auto'>
+          <div className='lg:basis-1/2 w-fit h-[200px] flex items-end justify-center relative isolate bg-accent -z-10 rounded-tl-[6rem] rounded-br-[6rem] rounded-tr-2xl rounded-bl-2xl  shadow-2xl shadow-[black] mt-40 mx-auto'>
             <Image
               src={myPic}
               alt="Cyberohn image"
